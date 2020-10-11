@@ -1,0 +1,497 @@
+:root{
+
+	--color-primary:#F1CDB3;
+	--color-light-s:#FAFAFA;
+	--color-light-l:#F6F6F6;
+	--color-light-xl:#FFFFFF;
+	--color-dark-s:#CDCDCD;
+	--color-dark-m:#B2B2B2;
+	--color-dark-l:#545454;
+	--color-dark-xl:#4C4C4C;
+	--color-dark-2xl:#444444;
+	--color-dark-3xl:#292929;
+	--color-primary-light:#FDDCC4;
+}
+
+*{
+	margin:0;
+	padding:0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+body{
+	position:relative;
+	margin:0;
+}
+
+.wrapper{
+	margin:0 auto;
+	max-width:1280px;
+	padding:0 40px;
+	
+}
+
+.wrapper_contentblocks{
+	margin:0 auto;
+	max-width:1280px;
+	padding:0 40px;
+	padding:80px 40px 100px 40px;
+
+}
+
+.header__content{
+	display:flex;
+	justify-content:space-between;
+}
+
+.header{
+	width:100%;
+	position: absolute;
+	top:3.80rem;
+}
+
+.logo{
+	display:flex;
+	flex-direction: column;
+}
+
+.logo__title{
+	color: var(--color-primary);
+	font-family: Georgia;
+	font-size:2rem;
+	letter-spacing:0.12rem;
+	line-height: 110%;
+
+}
+
+.logo__subtitle{
+	margin-top:10px;
+	color:var(--color-light-xl);
+	font-size:0.8125rem;
+	letter-spacing: 0.11rem;
+	line-height:110%;
+	text-align: center;
+}
+
+.menu{
+	display:flex;
+	width:443px;
+}
+
+.list{
+	display:flex;
+	justify-content:space-between;
+	width:100%;
+	list-style-type:none;
+}
+
+.list__link{
+	color:var(--color-light-xl);
+	font-family: Arial;
+	font-size:0.9375rem;
+	line-height: 160%;
+
+}
+
+.list__link_disabled{
+	color:var(--color-dark-s);
+}
+
+.list__link_active{
+	border-bottom: solid 3px  var(--color-primary);
+}
+
+.list__item{
+	display:flex;
+	align-items: center;
+}
+
+main{
+	display:flex;
+	flex-flow: column;
+	width:100%;
+}
+
+.hero{
+	
+	padding-top:180px;
+	
+}
+
+.gradient_background{
+	background: url(../../assets/noise_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+}
+
+.hero__content{
+	display:flex;
+	flex-flow: row;
+
+}
+
+
+.hero__inner{
+	margin-right:42px;
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+	padding-bottom: 80px
+}
+
+.hero__title{
+	font-weight: 400;
+	font-size:2.75rem;
+	font-family: Georgia;
+	color:var(--color-light-xl);
+	line-height:130%;
+	max-width: 19.375rem;
+}
+
+.hero__copy{
+	margin-top:2.625rem;
+	color:var(--color-dark-s);
+	line-height: 160%;
+	font-family:Arial;
+	font-weight:400;
+	font-size:0.94rem;
+
+}
+
+.hero_button{
+	max-width: 207px;
+	border-radius: 100px;
+	border:none;
+	background-color: var(--color-primary);
+	padding:17px 45px;
+	margin-top: 42px;
+	font-size:1rem;
+	font-family:Georgia;
+	letter-spacing:0.09rem;
+
+}
+
+
+.about__content{
+	display:flex;
+	flex-direction:row;
+	justify-content: center;
+}
+
+
+.about__copy_title{
+	font-family: Georgia;
+	font-size: 2.1875rem;
+	font-weight: 400;
+	line-height: 45px;
+	letter-spacing: 0.125rem;
+	color:var(--color-dark-l);
+}
+
+.about__copy_text{
+	font-family: Arial;
+	font-size: 15px;
+	line-height: 24px;
+	font-weight: 400;
+	color:var(--color-dark-xl);
+	margin-top: 23px;
+}
+
+.about__content_image{
+	width:300px;
+	height:408px;
+	margin-right:120px;
+
+}
+
+.about__copy{
+	width:430px;
+	height:380px;
+	margin-top: 17px;
+}
+
+.pets, .donation{
+	background-color:var(--color-light-l);
+}
+.pets__content{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+.pets__content_slider{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin:60px 0;
+	align-items: center;
+	height:435px;
+}
+
+.pets__content_headline_h3{
+	font-family: Georgia;
+	font-style: 400;
+	font-weight: 400;
+	font-size: 35px;
+	line-height: 45px;
+	letter-spacing: 0.125rem;
+	color:var(--color-dark-l);
+	text-align: center;
+}
+
+.pets__content_headline{
+	width:400px;
+}
+
+.pets__content_slider_card{
+	height:435px;
+	width:270px;
+	border-radius:9px;
+	background-color:var(--color-light-s);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	margin:0 45px;
+}
+
+.pets__content_slider_card_name{
+	font-family: Georgia;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 23px;
+	letter-spacing: 0.06rem;
+	color:var(---color-dark-l);
+}
+
+.pets__content_slider_card_img{
+	margin-bottom:30px;
+}
+
+.pets__content_slider_card_button{
+	margin:30px 0;
+	max-width: 187px;
+	border-radius: 100px;
+	border:2px solid;
+	background-color: var(--color-light-s);
+	border-color: var(--color-primary);
+	padding:15px 43px;
+	font-size:1rem;
+	font-family:Georgia;
+	letter-spacing:0.09rem;
+	box-sizing: border-box;
+
+}
+
+.pets__content_slider_arrowbutton{
+	max-width: 52px;
+	border-radius: 100px;
+	border:2px solid;
+	background-color: var(--color-light-l);
+	border-color: var(--color-primary);
+	padding:13px 15px;
+	font-size:1.2rem;
+	font-family:Georgia;
+	font-weight: 500;
+	letter-spacing:0.09rem;
+	box-sizing: border-box;
+	margin:10px;
+}
+
+.pets__content_button{
+	border-radius: 100px;
+	border:none;
+	background-color: var(--color-primary);
+	padding:17px 45px;
+	font-size:1rem;
+	font-family:Georgia;
+	letter-spacing:0.09rem;
+	box-sizing: border-box;
+}
+
+.help__content{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+.help__content_headline{
+	width:400px;
+}
+
+
+.help__content_headline_h3{
+	font-family: Georgia;
+	font-style: 400;
+	font-weight: 400;
+	font-size: 35px;
+	line-height: 45px;
+	letter-spacing: 0.125rem;
+	color:var(--color-dark-l);
+	text-align: center;
+}
+
+.help__content_list{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top:60px;
+}
+
+.help__content_list ul{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	list-style: none;
+}
+
+.help__content_list ul li{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	margin:0 60px;
+}
+
+.help__content_list h4{
+font-family: Georgia;
+font-style: 400;
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+text-align: center;
+letter-spacing: 0.06em;
+color:var(--color-dark-l);
+margin-top:30px;
+}
+
+.help__content_list_secondline{
+	margin-top: 55px;
+}
+
+.donation__content{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding:0 143px;
+}
+
+.donation__content_information{
+	align-self: center;
+	margin-top:2px;
+	margin-left:30px;
+}
+
+.donation__content img{
+	align-self: center;
+}
+
+.donation__content_information_headline_h3{
+	font-family: Georgia;
+	font-style: 400;
+	font-weight: 400;
+	font-size: 35px;
+	line-height: 45px;
+	letter-spacing: 0.125rem;
+	color:var(--color-dark-l);
+	margin-bottom: 20px;
+}
+
+.donation__content_information_subheader{
+	font-family: Georgia;
+	font-style: 400;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 110%;
+	letter-spacing: 0.06em;
+	color:var(--color-dark-l);
+	margin-bottom: 20px;
+}
+
+.donation__content_information button{
+	padding: 10px 13px;
+	border-radius: 9px;
+	background-color:var(--color-primary);
+	font-family: Georgia;
+	font-style: 400;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 23px;
+	align-items: center;
+	letter-spacing: 0.06em;
+	border:none;
+	color:var(--color-dark-l);
+	margin-bottom: 20px;
+	display:flex;
+}
+
+.donation__content_information button img{
+	margin-right:15px;
+}
+
+.donation__content_information p{
+	font-family: Arial;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	color:var(--color-dark-m);
+}
+
+.footer{
+	width:100%;
+	padding-top:40px;
+}
+
+.footer__content{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+.footer__content_info{
+	display:flex;
+	flex-direction: column;
+	align-items: baseline;
+	margin:16px 160px 60px 0;
+	justify-content: space-between;
+
+}
+
+.footer__content_info h3{
+	font-family: Georgia;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35px;
+	line-height: 45px;
+	letter-spacing: 0.06em;
+	color:var(--color-light-xl);
+	/*margin-bottom: 19px;*/
+}
+
+.footer__content_info a{
+	text-decoration: none;
+	display:flex;
+	flex-direction: row;
+	margin-bottom: 5px;
+
+}
+
+.footer__content_info a h4{
+	font-family: Georgia;
+	font-style: 400;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 23px;
+	letter-spacing: 0.06em;
+	color:var(--color-primary);
+}
+
+.footer__content_info a img{
+	margin-right:20px;
+}
